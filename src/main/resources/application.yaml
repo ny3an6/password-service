@@ -1,0 +1,27 @@
+spring:
+  profiles:
+    active: kafka
+  datasource:
+    url: ${DB_URL}
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    generate-ddl: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        order_updates: true
+      show-sql: true
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+#logging:
+#  level:
+#    org:
+#      springframework: INFO
+#      springframework.web: INFO
+#      apache.kafka: INFO
+
+
