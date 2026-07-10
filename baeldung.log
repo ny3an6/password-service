@@ -1,32 +1,38 @@
-2025-02-25 16:28:17 INFO  Starting PasswordServiceApplication using Java 22.0.2 with PID 4700 (F:\IntellijProjects\passwordService\target\classes started by ndmit in F:\IntellijProjects\passwordService)
-2025-02-25 16:28:17 DEBUG Running with Spring Boot v3.3.1, Spring v6.1.10
-2025-02-25 16:28:17 INFO  The following 1 profile is active: "kafka"
-2025-02-25 16:28:18 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-02-25 16:28:18 INFO  Finished Spring Data repository scanning in 47 ms. Found 2 JPA repository interfaces.
-2025-02-25 16:28:19 INFO  Tomcat initialized with port 8080 (http)
-2025-02-25 16:28:19 INFO  Initializing ProtocolHandler ["http-nio-8080"]
-2025-02-25 16:28:19 INFO  Starting service [Tomcat]
-2025-02-25 16:28:19 INFO  Starting Servlet engine: [Apache Tomcat/10.1.25]
-2025-02-25 16:28:19 INFO  Initializing Spring embedded WebApplicationContext
-2025-02-25 16:28:19 INFO  Root WebApplicationContext: initialization completed in 1332 ms
-2025-02-25 16:28:19 INFO  HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-02-25 16:28:19 INFO  HHH000412: Hibernate ORM core version 6.5.2.Final
-2025-02-25 16:28:19 INFO  HHH000026: Second-level cache disabled
-2025-02-25 16:28:19 INFO  No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-02-25 16:28:19 INFO  HikariPool-1 - Starting...
-2025-02-25 16:28:19 INFO  HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@407b41e6
-2025-02-25 16:28:19 INFO  HikariPool-1 - Start completed.
-2025-02-25 16:28:19 WARN  HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-02-25 16:28:20 INFO  HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-02-25 16:28:20 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-02-25 16:28:20 TRACE >> Был вызван метод getParamValidator, класса com.ndmitrenko.passwordservice.configuration.Configuration$$SpringCGLIB$$0, c параметрами [], получен результат com.ndmitrenko.passwordservice.validation.AnnotationBasedParamValidatorImpl@399a5a52
-2025-02-25 16:28:20 INFO  Hibernate is in classpath; If applicable, HQL parser will be used.
-2025-02-25 16:28:20 TRACE >> Был вызван метод producerFactory, класса com.ndmitrenko.passwordservice.configuration.KafkaProducerConfig$$SpringCGLIB$$0, c параметрами [], получен результат org.springframework.kafka.core.DefaultKafkaProducerFactory@17810908
-2025-02-25 16:28:20 TRACE >> Был вызван метод kafkaTemplate, класса com.ndmitrenko.passwordservice.configuration.KafkaProducerConfig$$SpringCGLIB$$0, c параметрами [], получен результат org.springframework.kafka.core.KafkaTemplate@3894d1b1
-2025-02-25 16:28:20 WARN  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-02-25 16:28:21 INFO  Starting ProtocolHandler ["http-nio-8080"]
-2025-02-25 16:28:21 INFO  Tomcat started on port 8080 (http) with context path '/'
-2025-02-25 16:28:21 INFO  Started PasswordServiceApplication in 4.184 seconds (process running for 4.881)
-2025-02-25 16:35:59 INFO  Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-02-25 16:35:59 INFO  HikariPool-1 - Shutdown initiated...
-2025-02-25 16:35:59 INFO  HikariPool-1 - Shutdown completed.
+2026-06-20 20:52:45 INFO  Starting PasswordServiceApplication using Java 22.0.2 with PID 23360 (F:\IntellijProjects\passwordService\target\classes started by ndmit in F:\IntellijProjects\passwordService)
+2026-06-20 20:52:45 DEBUG Running with Spring Boot v3.3.1, Spring v6.1.10
+2026-06-20 20:52:45 INFO  The following 1 profile is active: "kafka"
+2026-06-20 20:52:46 INFO  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-20 20:52:46 INFO  Finished Spring Data repository scanning in 89 ms. Found 2 JPA repository interfaces.
+2026-06-20 20:52:47 INFO  Tomcat initialized with port 8081 (http)
+2026-06-20 20:52:47 INFO  Initializing ProtocolHandler ["http-nio-8081"]
+2026-06-20 20:52:47 INFO  Starting service [Tomcat]
+2026-06-20 20:52:47 INFO  Starting Servlet engine: [Apache Tomcat/10.1.25]
+2026-06-20 20:52:47 INFO  Initializing Spring embedded WebApplicationContext
+2026-06-20 20:52:47 INFO  Root WebApplicationContext: initialization completed in 1909 ms
+2026-06-20 20:52:47 INFO  HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-06-20 20:52:47 INFO  HHH000412: Hibernate ORM core version 6.5.2.Final
+2026-06-20 20:52:47 INFO  HHH000026: Second-level cache disabled
+2026-06-20 20:52:47 INFO  No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-20 20:52:47 INFO  HikariPool-1 - Starting...
+2026-06-20 20:52:48 INFO  HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@12548f9a
+2026-06-20 20:52:48 INFO  HikariPool-1 - Start completed.
+2026-06-20 20:52:48 WARN  HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-06-20 20:52:48 INFO  HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-20 20:52:48 INFO  Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-20 20:52:48 TRACE >> Был вызван метод getParamValidator, класса com.ndmitrenko.passwordservice.configuration.Configuration$$SpringCGLIB$$0, c параметрами [], получен результат com.ndmitrenko.passwordservice.validation.AnnotationBasedParamValidatorImpl@17635531
+2026-06-20 20:52:49 INFO  Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-06-20 20:52:49 TRACE >> Был вызван метод producerFactory, класса com.ndmitrenko.passwordservice.configuration.KafkaProducerConfig$$SpringCGLIB$$0, c параметрами [], получен результат org.springframework.kafka.core.DefaultKafkaProducerFactory@62ff3028
+2026-06-20 20:52:49 TRACE >> Был вызван метод kafkaTemplate, класса com.ndmitrenko.passwordservice.configuration.KafkaProducerConfig$$SpringCGLIB$$0, c параметрами [], получен результат org.springframework.kafka.core.KafkaTemplate@73502d5e
+2026-06-20 20:52:49 WARN  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-20 20:52:49 INFO  Starting ProtocolHandler ["http-nio-8081"]
+2026-06-20 20:52:49 INFO  Tomcat started on port 8081 (http) with context path '/'
+2026-06-20 20:52:49 INFO  Started PasswordServiceApplication in 5.142 seconds (process running for 6.079)
+2026-06-20 20:55:11 INFO  Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-20 20:55:11 INFO  Initializing Servlet 'dispatcherServlet'
+2026-06-20 20:55:11 INFO  Completed initialization in 1 ms
+2026-06-20 20:55:11 DEBUG >> Вызывается endpoint /resource/list, с параметрами []
+2026-06-20 20:55:11 TRACE >> Был вызван метод findAll, класса jdk.proxy2.$Proxy132, c параметрами [], получен результат [com.ndmitrenko.passwordservice.model.entity.ResourceData@6694e948, com.ndmitrenko.passwordservice.model.entity.ResourceData@59cae15f, com.ndmitrenko.passwordservice.model.entity.ResourceData@ad8450a, com.ndmitrenko.passwordservice.model.entity.ResourceData@6b33c0d7, com.ndmitrenko.passwordservice.model.entity.ResourceData@b75e159, com.ndmitrenko.passwordservice.model.entity.ResourceData@5bb3971, com.ndmitrenko.passwordservice.model.entity.ResourceData@4d03dcd9, com.ndmitrenko.passwordservice.model.entity.ResourceData@384398d6, com.ndmitrenko.passwordservice.model.entity.ResourceData@1c98c9ae, com.ndmitrenko.passwordservice.model.entity.ResourceData@40341bfd, com.ndmitrenko.passwordservice.model.entity.ResourceData@1382e236, com.ndmitrenko.passwordservice.model.entity.ResourceData@37234db8, com.ndmitrenko.passwordservice.model.entity.ResourceData@6dac274b, com.ndmitrenko.passwordservice.model.entity.ResourceData@da732f0, com.ndmitrenko.passwordservice.model.entity.ResourceData@930e220, com.ndmitrenko.passwordservice.model.entity.ResourceData@24533033, com.ndmitrenko.passwordservice.model.entity.ResourceData@28c9cd8d, com.ndmitrenko.passwordservice.model.entity.ResourceData@1c4d5ad6, com.ndmitrenko.passwordservice.model.entity.ResourceData@12629a9d, com.ndmitrenko.passwordservice.model.entity.ResourceData@2f8de24a]
+2026-06-20 20:55:11 TRACE >> Был вызван метод getResourceDataList, класса com.ndmitrenko.passwordservice.service.ResourceService, c параметрами [], получен результат [com.ndmitrenko.passwordservice.model.entity.ResourceData@6694e948, com.ndmitrenko.passwordservice.model.entity.ResourceData@59cae15f, com.ndmitrenko.passwordservice.model.entity.ResourceData@ad8450a, com.ndmitrenko.passwordservice.model.entity.ResourceData@6b33c0d7, com.ndmitrenko.passwordservice.model.entity.ResourceData@b75e159, com.ndmitrenko.passwordservice.model.entity.ResourceData@5bb3971, com.ndmitrenko.passwordservice.model.entity.ResourceData@4d03dcd9, com.ndmitrenko.passwordservice.model.entity.ResourceData@384398d6, com.ndmitrenko.passwordservice.model.entity.ResourceData@1c98c9ae, com.ndmitrenko.passwordservice.model.entity.ResourceData@40341bfd, com.ndmitrenko.passwordservice.model.entity.ResourceData@1382e236, com.ndmitrenko.passwordservice.model.entity.ResourceData@37234db8, com.ndmitrenko.passwordservice.model.entity.ResourceData@6dac274b, com.ndmitrenko.passwordservice.model.entity.ResourceData@da732f0, com.ndmitrenko.passwordservice.model.entity.ResourceData@930e220, com.ndmitrenko.passwordservice.model.entity.ResourceData@24533033, com.ndmitrenko.passwordservice.model.entity.ResourceData@28c9cd8d, com.ndmitrenko.passwordservice.model.entity.ResourceData@1c4d5ad6, com.ndmitrenko.passwordservice.model.entity.ResourceData@12629a9d, com.ndmitrenko.passwordservice.model.entity.ResourceData@2f8de24a]
+2026-06-20 23:40:04 INFO  Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-20 23:40:04 INFO  HikariPool-1 - Shutdown initiated...
+2026-06-20 23:40:04 INFO  HikariPool-1 - Shutdown completed.

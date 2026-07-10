@@ -10,11 +10,13 @@ import com.ndmitrenko.passwordservice.model.request.CreateResourceDataRequest;
 import com.ndmitrenko.passwordservice.model.request.CreateResourceFromFileRequest;
 import com.ndmitrenko.passwordservice.model.request.EditResourceDataRequest;
 import com.ndmitrenko.passwordservice.repository.ResourceDataRepository;
-import com.ndmitrenko.passwordservice.repository.UpdatedDataRepository;
+import com.ndmitrenko.passwordservice.repository.UpdatedDataHistoryRepository;
+import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
+import org.springframework.stereotype.Repository;
 import org.springframework.stereotype.Service;
 import org.springframework.util.CollectionUtils;
 
@@ -24,15 +26,14 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.time.LocalDateTime;
 import java.util.List;
-import java.util.Optional;
 
 @Slf4j
-@Service
+@Repository
 @RequiredArgsConstructor
 public class ResourceService {
 
     private final ResourceDataRepository resourceDataRepository;
-    private final UpdatedDataRepository updatedDataRepository;
+    private final UpdatedDataHistoryRepository updatedDataHistoryRepository;
 
     public List<ResourceData> getResourceDataList() {
         return resourceDataRepository.findAll();
@@ -88,6 +89,7 @@ public class ResourceService {
         }
     }
 
+    @Transactional
     public void editResourceData(EditResourceDataRequest request) {
         ResourceData resourceData = resourceDataRepository.findById(request.getId())
                 .map(item -> ResourceDataMapper.INSTANCE.map(request, item))
@@ -95,7 +97,7 @@ public class ResourceService {
         UpdatedDataHistory updatedDataHistory = UpdatedDataMapper.INSTANCE.map(resourceData);
 
         resourceDataRepository.save(resourceData);
-        updatedDataRepository.save(updatedDataHistory);
+        updatedDataHistoryRepository.save(updatedDataHistory);
     }
 
     public List<ResourceData> getMatchData(String searchText) {

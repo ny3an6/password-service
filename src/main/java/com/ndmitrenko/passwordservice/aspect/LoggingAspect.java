@@ -30,7 +30,7 @@ public class LoggingAspect {
 
     @Before("controllers()")
     public void logControllers(JoinPoint joinPoint) {
-        final HttpServletRequest request = ((ServletRequestAttributes) RequestContextHolder.currentRequestAttributes()).getRequest();
+        HttpServletRequest request = ((ServletRequestAttributes) RequestContextHolder.currentRequestAttributes()).getRequest();
         log.debug(">> Вызывается endpoint {}, с параметрами {}", request.getRequestURI(), Arrays.toString(joinPoint.getArgs()));
     }
 
